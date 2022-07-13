@@ -1,0 +1,19 @@
+.t-heading__block {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.o-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.o-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+#root {
+    height: 100%;
+}
