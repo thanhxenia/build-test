@@ -1,10 +1,17 @@
 .c-person {
     padding: 0 1.5rem;
+    position: relative;
     &__item {
         display: flex;
-        border-top: 1px solid #000;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #dfdfdf;
+        margin-top: -1px;
+        &:nth-child(2n) {
+            background-color: #f7f7f7;
+        }
         &:last-child {
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #dfdfdf;
         }
         &--name {
             flex: 1;
@@ -19,9 +26,44 @@
         &--birth {
             width: 13%;
             padding: 5px;
+            span {
+                font-weight: 700;
+            }
+        }
+        &--grid {
+            width: 25%;
+            max-width: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #dfdfdf;
+        }
+
+        &--box {
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                width: 100%;
+                span {
+                    font-weight: 700;
+                }
+            }
         }
     }
+
     &-header {
         font-weight: 700;
+        background: #dfdfdf;
+    }
+    &--action {
+        position: absolute;
+        margin-left: 20px;
+        right: 1.5rem;
+        button {
+            cursor: pointer;
+            padding: 8px 12px;
+            font-size: 16px;
+            margin: 10px;
+            border: 1px solid #dfdfdf;
+        }
     }
 }
